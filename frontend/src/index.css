@@ -1,0 +1,397 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+.accordion-button:hover {
+  background-color: #fff; /* light gray background */
+  color: #000;            /* custom text color */
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.pageMargin {
+  margin-top: 90px;
+  background-color: #f8f7f7;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #f8f7f7;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover,
+.dropdown-menu .dropdown-item:hover {
+  border-bottom: 2px solid #f1b84d  ;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#dropdown-basic::after {
+  display: none;
+}
+
+.button-common-style {
+  background-color: #f1b84d !important;
+  color: #eaf1f0;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0.5%;
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  text-transform: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button-common-style:hover {
+  background-color: #f1b84d;
+  transform: scale(1.05);
+}
+
+.navbarStyle {
+  background-color: white;
+}
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.image2 {
+  position: absolute;
+  top: -65px;
+  left: 410px;
+  z-index: 2;
+  border-radius: 10 0 0 10;
+  opacity: 0.7;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes example {
+  0% {
+    left: 10px;
+    top: 20px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.image3 {
+  position: absolute;
+  top: 85%;
+  left: -65%;
+  z-index: 2;
+  border-radius: 10 0 0 10;
+  opacity: 0.7;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.image2:hover,
+.image3:hover {
+  /* transform: matrix(1, -0.5, 0, 1, 0, 0); */
+  /* transition: width 2s linear 1s; */
+  background: url("https://www.tutorialspoint.com/dip/images/black_and_white.jpg")
+    norepeat;
+  /* width: 250px;
+  height: 195px; */
+  display: inline-block;
+}
+.w3-col {
+  column-count: 3;
+  width: 100%;
+}
+
+.foot {
+  background-color: white;
+  color: black;
+}
+.ss-icons {
+  color: black;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  border-radius: 10px;
+}
+.ss-icons:hover {
+  color: grey;
+  transform: scale(1.05);
+}
+.carouselItem {
+  width: 30vw;
+  height: 40vh;
+}
+
+.carouselItem img {
+  display: inline-block;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  position: absolute;
+  top: -10%;
+  color: red;
+}
+
+.carousel-control-prev-icon {
+  right: 0%;
+}
+
+.react-multiple-carousel__arrow {
+  top: 0px;
+}
+.react-multiple-carousel__arrow--left {
+  left: calc(85% + 1px) !important;
+  /* right: calc(4% + 1px); */
+}
+.benefits {
+  border-radius: 70px;
+  /* background-color: #b3ceb2; */
+  margin: 40px;
+  padding: 40px;
+}
+
+.benefits > img {
+  width: 200px;
+  height: 30vh;
+}
+.benefitsBackground {
+  top: 0;
+  height: 1000px;
+  transform: translateX(-80%);
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  z-index: 0;
+  width: 100%;
+  opacity: 0.15;
+  height: 605px;
+  background: #f8f7f7;
+  border-radius: 8px 8px 140px 8px;
+  transition: transform 0.2s;
+}
+.accordion-item {
+  font-size: 1em;
+  /* border: 0.6em solid var(--white); */
+  border-radius: 15px;
+}
+.accordion-item .collapsed {
+  border-radius: 15px;
+}
+.accordion-item h2 button {
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  border-radius: 15px;
+  box-shadow: none !important;
+}
+.accordion-item h2 button:hover {
+  text-decoration: none;
+  box-shadow: none !important;
+}
+.accordion-item h2 button.collapsed {
+  color: black;
+  box-shadow: none !important;
+}
+.accordion-item .accordion-body {
+  padding-top: 0.5em;
+}
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
+  --bs-accordion-active-bg: white;
+  --bs-accordion-active-color: black;
+  border: none;
+}
+.circle {
+  border-radius: 50%;
+}
+
+/*can also use pixels for the units instead of %*/
+.rounded-square {
+  border-radius: 90%;
+}
+
+/*Can specify the corner in the border-radius selector, such as "border-top-left-radius"*/
+.rounded-top {
+  border-radius: 90% 90% 0% 0%;
+}
+
+/*first value applies to top-left and bottom-right, second value applies to top-right and bottom-left corner*/
+.two-values {
+  border-radius: 20% 50%;
+}
+
+/*first value applies to top-left, second value applies to top-right and bottom-left, and third value applies to bottom-right*/
+.three-values {
+  border-radius: 90% 10% 100% 2%;
+}
+
+/*first value applies to top-left, second value applies to top-right, third value applies to bottom-right, and fourth value applies to bottom-left corner*/
+.four-values {
+  border-radius: 90% 60% 80% 50%;
+}
+
+/*Students do NOT modify any of this CSS below:*/
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* div {
+  width: 100px;
+  height: 100px;
+  background: #0066cc;
+  margin: 10px auto;
+  display: inline-block;
+} */
+
+.imgContainer {
+  width: 100%;
+  display: block;
+  background: none;
+}
+
+.imgContainer img {
+  width: 50%;
+}
+.wrap {
+  background-image: linear-gradient(0deg, #fff 0%, #ebc94f 100%);
+}
+.wrap svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.curve {
+  stroke-width: 3px;
+  stroke-opacity: 0;
+}
+.curve path {
+  transform-origin: center 60px;
+}
+.curve path:nth-child(1) {
+  animation: curve 6s linear 1.2s infinite;
+}
+.curve path:nth-child(2) {
+  animation: curve 6s linear 2.4s infinite;
+}
+.curve path:nth-child(3) {
+  animation: curve 6s linear 3.6s infinite;
+}
+.curve path:nth-child(4) {
+  animation: curve 6s linear 4.8s infinite;
+}
+.curve path:nth-child(5) {
+  animation: curve 6s linear 6s infinite;
+}
+.curve path:nth-child(6) {
+  animation: curve 6s linear 7.2s infinite;
+}
+
+@keyframes curve {
+  0% {
+    transform: none;
+    stroke-opacity: 0;
+  }
+  50% {
+    transform: rotateX(360deg) scaleY(0.8);
+    stroke-opacity: 0.4;
+  }
+  70% {
+    /* transform: skewY(-2deg); */
+  }
+  100% {
+    transform: none;
+    stroke-opacity: 0;
+  }
+}
+.navbar-toggler {
+  margin: 15px;
+}
+.navbar-toggler-icon {
+  background-image: none !important;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  width: 25px;
+  margin: 10px 0;
+  position: relative;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+}
+.navbar-toggler-icon::before {
+  display: block;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  content: "";
+  position: relative;
+  top: -7px;
+  transition: all 0.15s ease-out; /*taken down to hide quicker*/
+  transform-origin: center;
+}
+
+.navbar-toggler-icon::after {
+  display: block;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  content: "";
+  position: relative;
+  top: 4px;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+}
+
+.navbar-dark .navbar-toggler-icon,
+.navbar-dark .navbar-toggler-icon::before,
+.navbar-dark .navbar-toggler-icon::after {
+  background-color: var(--bs-gray-50);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  transform: rotate(-90deg) translateX(7px);
+}
+.form-floating-group input {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.rounded-div {
+  border-radius: 5px;
+  background-color: #f4b8a3;
+}
+.circleComp {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}
+.circlComponent {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}

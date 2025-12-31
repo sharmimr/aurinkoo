@@ -1,0 +1,100 @@
+/* Set full background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4b8a3;
+  font-family: Arial, sans-serif;
+}
+
+/* Centered container with yellow-to-red gradient */
+.form-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #f4b8a3;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form fields layout */
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #222;
+}
+
+.form-row input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #888;
+  border-radius: 5px;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+h2{
+  color: black;
+}
+
+.submit-btn:hover {
+  background-color: #111;
+}
+
+/* Hide the real file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Styled label that looks like a button */
+.file-label {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #444;
+  color: white !important;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #222;
+}
+
+/* Optional: file name display */
+.file-name {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #fff;
+  word-break: break-word;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
