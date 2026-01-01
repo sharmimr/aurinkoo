@@ -58,7 +58,7 @@ function TextControlsExample() {
 
     setError({});
     try {
-      await axios.post("http://localhost:5050/send-email", formData, {
+      await axios.post("/send-email", formData, {
         headers: { "Content-Type": "application/json" },
       });
       setSuccess("Email sent successfully!");

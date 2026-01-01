@@ -1,6 +1,6 @@
 import AboutIllustration from "./AboutIllustration";
 import Image from "react-bootstrap/Image";
-import {useRef, useEffect} from 'react'
+import { useRef, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { Foot } from "./Footer";
@@ -47,11 +47,11 @@ function About() {
         className="d-flex align-items-center slide-in-container"
       >
         <Image
-          src="/assets/images/aboutus.jpg"
+          src="/assets/images/aboutUs.jpg"
           width="40%"
           height="300px"
           className="slide-left me-4"
-          style={{ width: "60%", margin: "10px", borderRadius: '25px' }}
+          style={{ width: "60%", margin: "10px", borderRadius: "25px" }}
         />
         <div>
           <p>
