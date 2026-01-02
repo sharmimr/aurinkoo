@@ -63,7 +63,7 @@ const Careers = () => {
 
     try {
       await axios.post(
-        "https://aurinkobe.onrender.com:5001/career-email",
+        `${process.env.REACT_APP_API_URL}/career-email`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },

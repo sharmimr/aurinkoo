@@ -9,7 +9,8 @@ const app = express();
 // ======== MIDDLEWARES ========
 app.use(
   cors({
-    origin: "http://localhost:3000", // React dev server
+    origin: ["http://localhost:3000",
+      "https://aurinkoo.vercel.app"], // Frontend origins
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   })

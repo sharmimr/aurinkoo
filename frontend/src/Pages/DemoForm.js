@@ -54,7 +54,7 @@ const DemoForm = () => {
     setErrors(newErrors);
     try {
       await axios.post(
-        "https://aurinkobe.onrender.com:5050/send-email",
+        `${process.env.REACT_APP_API_URL}/send-email`,
         formData,
         {
           headers: { "Content-Type": "application/json" },
