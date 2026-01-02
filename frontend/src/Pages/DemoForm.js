@@ -53,9 +53,13 @@ const DemoForm = () => {
 
     setErrors(newErrors);
     try {
-      await axios.post(`/send-email`, formData, {
-        headers: { "Content-Type": "application/json" },
-      });
+      await axios.post(
+        `${process.env.REACT_APP_API_URL}:${process.env.PORT}/send-email`,
+        formData,
+        {
+          headers: { "Content-Type": "application/json" },
+        }
+      );
       setSuccess("Email sent successfully!");
       setErrors({});
       setFormData({});

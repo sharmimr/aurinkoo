@@ -62,9 +62,13 @@ const Careers = () => {
     setErrors(newErrors);
 
     try {
-      await axios.post(`/career-email`, formData, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
+      await axios.post(
+        `${process.env.REACT_APP_API_URL}:${process.env.PORT}/career-email`,
+        formData,
+        {
+          headers: { "Content-Type": "multipart/form-data" },
+        }
+      );
       setSuccess("Email sent successfully!");
       setError("");
     } catch (err) {

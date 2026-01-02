@@ -9,12 +9,12 @@ const app = express();
 // ======== MIDDLEWARES ========
 app.use(
   cors({
-    origin: ["http://localhost:3000",
-      "https://aurinkoo.vercel.app"], // Frontend origins
+    origin: ["http://localhost:3000", "https://aurinkoo.vercel.app"], // Frontend origins
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   })
 );
+app.options("*", cors());
 app.use(express.json()); // Parse JSON bodies
 
 // Multer for file uploads (memory storage like Flask)
