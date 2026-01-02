@@ -61,16 +61,20 @@ const Careers = () => {
 
     setErrors(newErrors);
 
-      try {
-        await axios.post("http://localhost:5001/career-email", formData, {
+    try {
+      await axios.post(
+        "https://aurinkobe.onrender.com:5001/career-email",
+        formData,
+        {
           headers: { "Content-Type": "multipart/form-data" },
-        });
-        setSuccess("Email sent successfully!");
-        setError("")
-      } catch (err) {
-        setError("Something went wrong. Please try again later.");
-        setSuccess('')
-      }
+        }
+      );
+      setSuccess("Email sent successfully!");
+      setError("");
+    } catch (err) {
+      setError("Something went wrong. Please try again later.");
+      setSuccess("");
+    }
   };
 
   return (

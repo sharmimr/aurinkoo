@@ -53,9 +53,13 @@ const DemoForm = () => {
 
     setErrors(newErrors);
     try {
-      await axios.post("http://localhost:5050/send-email", formData, {
-        headers: { "Content-Type": "application/json" },
-      });
+      await axios.post(
+        "https://aurinkobe.onrender.com:5050/send-email",
+        formData,
+        {
+          headers: { "Content-Type": "application/json" },
+        }
+      );
       setSuccess("Email sent successfully!");
       setErrors({});
       setFormData({});
